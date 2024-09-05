@@ -1,0 +1,18 @@
+{
+    "Service": "/dd/Services/purl.service",
+    "DefiningRequests": [{
+            "Name": "Header_table",
+            "Query": "Header_table"
+        },
+        {
+            "Name": "Item_table",
+            "Query": "Item_table"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/dd/Actions/purl/Service/SyncFailureMessage.action",
+    "OnSuccess": "/dd/Rules/purl/ErrorArchive_CheckForSyncError.js"
+}

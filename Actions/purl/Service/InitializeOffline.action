@@ -1,0 +1,19 @@
+{
+    "Service": "/dd/Services/purl.service",
+    "DefiningRequests": [{
+            "Name": "Header_table",
+            "Query": "Header_table"
+        },
+        {
+            "Name": "Item_table",
+            "Query": "Item_table"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/dd/Actions/purl/Service/InitializeOfflineFailureMessage.action"
+}

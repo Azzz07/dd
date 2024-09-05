@@ -1,0 +1,68 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader_purl",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "purl",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"OnPress": "/dd/Actions/purl/Header_table/NavToHeader_table_List.action",
+							"Alignment": "Center",
+							"Title": "Header_table",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/dd/Actions/purl/Item_table/NavToItem_table_List.action",
+							"Alignment": "Center",
+							"Title": "Item_table",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						}
+					],
+					"_Name": "SectionButtonTable_purl",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/dd/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/dd/Services/purl.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/dd/Actions/purl/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/dd/Actions/purl/Service/CloseOfflineFailureMessage.action"
+}

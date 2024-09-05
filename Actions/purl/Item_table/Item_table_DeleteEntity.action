@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Item_table",
+        "Service": "/dd/Services/purl.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/dd/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/dd/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

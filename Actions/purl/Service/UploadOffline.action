@@ -1,0 +1,9 @@
+{
+    "Service": "/dd/Services/purl.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/dd/Actions/purl/Service/DownloadStartedMessage.action",
+    "OnFailure": "/dd/Actions/purl/Service/SyncFailureMessage.action"
+}
